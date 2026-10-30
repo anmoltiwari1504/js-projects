@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="" >
+<div class="container">
+  <header>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img width="50px"  src="js.png" alt="">
+      </div>
+      <div class="list">
+        <ul class="ul-list">
+          <li>Home</li>
+          <li>portfilo</li>
+          <li>Courses</li>
+          <li>About us</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+      <div class="login">
+        <button class="nav-btn" >login in</button>
+      </div>
+    </nav>
+  </header>
+  <!-- pop-up form -->
+   <div class="blur-bg-overlay"></div>
+  <div class="form-popup">
+     <button i class="close-btn  fa-solid fa-xmark"></i></button> 
+    <div class="form-box login">
+      <div class="form-details">
+        <h2>Welcome Back </h2>
+      <p>Please log in using your personal information to stay connect with us</p>
+      </div>
+      <div class="form-content">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-field">
+            <input class="input-text" type="text" required>
+            <label>Email</label>
+          </div>
+          <div class="input-field">
+            <input class="input-text" type="password" required>
+            <label>password</label>
+          </div>
+          <a href="#" class="forget-passward">forget passward ?</a>
+          <button type="submit">Log in</button>
+        </form> 
+        <div class="bottom-link">
+          Don't have an account ?
+          <a href="#"id="signup-link" >Signup</a> 
+        </div>
+      </div>
+    </div>
+      <div class="form-box signup">
+      <div class="form-details">
+        <h2>create Account </h2>
+      <p>To become a part of our community, please sign up using your personal impormation</p>
+      </div>
+      <div class="form-content">
+        <h2>Sign up </h2>
+        <form action="#">
+          <div class="input-field">
+            <input class="input-text" type="text" required>
+            <label>Enter Your Email</label>
+          </div>
+          <div class="input-field">
+            <input class="input-text" type="password" required>
+            <label> Create password</label>
+          </div>
+          <div class="policy-text">
+            <input type="checkbox" id="policy" required >
+            <label for="policy">
+              I agree the
+              <a href="#">Term & condition</a>
+            </label>
+          </div>
+          <button type="submit">Sign up</button>
+        </form> 
+        <div class="bottom-link">
+         Already have an account ?
+          <a href="#"id="login-link">login</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+</body>
+</html>
