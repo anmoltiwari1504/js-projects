@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhai+2&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=Poppins:wght@200;400;600;900&family=Sirivennela&family=Wix+Madefor+Display&display=swap');
+
+*{
+   font-family: "Poppins", sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: black;
+}
+button {
+  position: relative;
+  height: 60px;
+  width: 200px;
+  border: none;
+  outline: none;
+  background-color: #111;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius:8px;
+
+}
+button:before {
+  position: absolute;
+  content: '';
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: 8px;
+  background:linear-gradient(45deg , #ff0000 , #ff7300 , #fffb00 , #48ff00 , #00ffd5 ,#002dff , #7a00ff , #ff00c8 , #ff0000);
+  background-size: 400%;
+  filter: blur(5px) ;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  animation: animate 2s linear infinite;
+} 
+button:hover:before{
+  opacity: 1;
+} 
+button:hover:active:before{
+filter: blur(2px );
+} 
+button:hover:active{
+  background:none;
+}
+@keyframes animate{
+  0% {
+    background-position: 0 0 ;
+  }
+  50% {
+    background-position: 400% 0 ;
+  }
+  100% {
+    background-position: 0 0 ;
+  }
+}
